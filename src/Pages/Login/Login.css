@@ -1,0 +1,91 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, red, green, purple);
+  width: 75%;
+  margin: 80px auto;
+  height: 100vh;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px 0;
+}
+.login-title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 15px 0;
+  color: coral;
+  text-align: center;
+}
+.username-login {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  margin: 15px 0;
+}
+.login-input {
+  /* border: 3px solid red; */
+  /* outline: none; */
+  /* border-bottom: 1px solid #252525; */
+  padding: 12px 30px;
+  border-radius: 20px;
+}
+.login-icon {
+  position: absolute;
+  font-size: 3.4rem;
+  right: 81%;
+}
+.remember-me,
+.forgot-pass,
+.not-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.remember-label {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.forgot-pass-link {
+  color: #252525;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.not-register-span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(216, 216, 41);
+}
+.space {
+  padding: 0 6px;
+}
+.success-alarm{
+  border: 2px solid blue;
+}
+.error-alarm{
+  border: 2px solid red;
+}
+.btn-login{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.btn-login-to-homepage{
+  all: unset;
+  background-color: yellowgreen;
+  padding: 6px 20px;
+  border-radius: 10px;
+}
+.valid{
+  cursor: pointer;
+}
+.invalid{
+  cursor: not-allowed;
+}

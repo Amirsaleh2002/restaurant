@@ -1,0 +1,25 @@
+.notifs {
+  border: 1px solid #ccc;
+  padding: 12px;
+  background-color: aliceblue;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notif-text {
+  font-size: 1.7rem;
+  color: #252525;
+  font-weight: 900;
+}
+.notif-button {
+  border: none;
+  outline: none;
+  background-color: #a50a0a;
+  border-radius: 12px;
+  padding: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
