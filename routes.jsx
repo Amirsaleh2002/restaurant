@@ -8,11 +8,13 @@ import Notifications from "./src/Pages/Notifications/Notifications";
 import Register from "./src/Pages/Register/Register";
 import UserBasket from "./src/Pages/UserBasket/UserBasket";
 import UserProfile from "./src/Pages/userProfile/userProfile";
+import CookListInfo from "./src/Pages/CookListInfo/CookListInfo"
 
 let routes = [
   { path: "/", element: <HomePage /> },
   { path: "/userprofile", element: <UserProfile /> },
   { path: "/cooklist", element: <CookList /> },
+  { path: "/cooklist/:id", element: <CookListInfo /> },
   { path: "/aboutus", element: <AboutUs /> },
   { path: "/notifications", element: <Notifications /> },
   { path: "/userbasket", element: <UserBasket /> },

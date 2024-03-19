@@ -1,5 +1,6 @@
 import React from "react";
 import "./CookListBox.css";
+import { Link } from "react-router-dom";
 
 function CookListBox() {
   return (
@@ -14,9 +15,9 @@ function CookListBox() {
       <div className="cook-details">
         <h1 className="cook-name">حمید ریخته گر زاده</h1>
         <p className="cook-history">سابقه : 5 سال</p>
-        <button className="cook-more">
-            جزئیات بیشتر
-        </button>
+        <Link to={`/cooklist/1`} className="cook-more">
+          جزئیات بیشتر
+        </Link>
       </div>
     </div>
   );
