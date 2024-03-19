@@ -92,6 +92,7 @@
 .instagram {
   font-size: 3.5rem;
   cursor: pointer;
+  transition: all 0.4s;
 }
 .telegram {
   color: blue;
@@ -99,16 +100,18 @@
 .instagram {
   color: rgb(211, 12, 88);
 }
-/* .social-media:nth-child(1):hover{
-  background-color: blue;
+.social-media:nth-child(1):hover,
+.social-media:nth-child(2):hover {
+  transform: scale(1.05);
 }
-.social-media:nth-child(2):hover{
-  background-color: red;
-} */
-@media (max-width:760px) {
+.social-media:nth-child(1):hover .telegram,
+.social-media:nth-child(2):hover .instagram {
+  transform: rotate(20deg);
+}
+@media (max-width: 760px) {
   .right-footer,
   .center-footer,
-  .left-footer{
+  .left-footer {
     margin-top: 15px;
   }
 }
