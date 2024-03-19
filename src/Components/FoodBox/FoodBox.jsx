@@ -2,6 +2,7 @@ import React from "react";
 import { AiOutlineStar, AiTwotoneStar, AiOutlineHeart } from "react-icons/ai";
 
 import "./FoodBox.css";
+import { Link } from "react-router-dom";
 
 function FoodBox({ title, price, isFavorite, id, isSale, isButtonNeed , serveFoodCounter }) {
   // const addToFavorite = (foodID) => {
@@ -63,6 +64,9 @@ function FoodBox({ title, price, isFavorite, id, isSale, isButtonNeed , serveFoo
             <AiTwotoneStar className="score-icon" />
             <AiTwotoneStar className="score-icon" />
           </div>
+          <Link to={`/fooddetail/${id}`} className="see-food-details">
+            مشاهده جزئیات
+          </Link>
         </div>
         <div className="price-addtocart">
           <span className="food-price">{price.toLocaleString()} تومان</span>

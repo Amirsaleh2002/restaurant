@@ -1,6 +1,7 @@
 import AboutUs from "./src/Pages/AboutUs/AboutUs";
 import ClientsList from "./src/Pages/ClientsList/ClientsList";
-import Favorites from "./src/Pages/Favorites/Favorites";
+import CookList from "./src/Pages/CookList/CookList";
+import FoodDetails from "./src/Pages/FoodDetails/FoodDetails";
 import HomePage from "./src/Pages/HomePage/HomePage";
 import Login from "./src/Pages/Login/Login";
 import Notifications from "./src/Pages/Notifications/Notifications";
@@ -11,13 +12,14 @@ import UserProfile from "./src/Pages/userProfile/userProfile";
 let routes = [
   { path: "/", element: <HomePage /> },
   { path: "/userprofile", element: <UserProfile /> },
-  { path: "/favorites", element: <Favorites /> },
+  { path: "/cooklist", element: <CookList /> },
   { path: "/aboutus", element: <AboutUs /> },
   { path: "/notifications", element: <Notifications /> },
   { path: "/userbasket", element: <UserBasket /> },
   { path: "/login", element: <Login /> },
   { path: "/register", element: <Register /> },
   { path: "/clientlist", element: <ClientsList /> },
+  { path: "/fooddetail/:id", element: <FoodDetails /> },
 ];
 
 export default routes;

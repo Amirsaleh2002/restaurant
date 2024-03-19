@@ -19,6 +19,14 @@
   font-weight: 800;
   margin: 8px 0;
 }
+.see-food-details{
+  font-size: 1.7rem;
+  color: blue;
+  font-weight: 800;
+}
+.see-food-details:hover {
+  color: red;
+}
 .score-favorite,
 .price-addtocart {
   display: flex;

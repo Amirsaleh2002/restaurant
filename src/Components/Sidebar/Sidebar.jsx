@@ -6,6 +6,7 @@ import { AiTwotoneHome } from "react-icons/ai";
 import { FiUsers } from "react-icons/fi";
 import { CiStar } from "react-icons/ci";
 import { FaRegQuestionCircle } from "react-icons/fa";
+import { GiCook } from "react-icons/gi";
 import { Link } from "react-router-dom";
 function Sidebar() {
   return (
@@ -18,8 +19,8 @@ function Sidebar() {
         <Link to="/userprofile" className="sidebar-item-link ">
           <RxAvatar /> مشاهده پروفایل
         </Link>
-        <Link to="/favorites" className="sidebar-item-link">
-          <CiStar /> ستاره دار ها
+        <Link to="/cooklist" className="sidebar-item-link">
+          <GiCook />لیست آشپز ها
         </Link>
         <Link to="/clientlist" className="sidebar-item-link">
           <FiUsers />  لیست مشتریان
