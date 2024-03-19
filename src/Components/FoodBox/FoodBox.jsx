@@ -4,25 +4,25 @@ import { AiOutlineStar, AiTwotoneStar, AiOutlineHeart } from "react-icons/ai";
 import "./FoodBox.css";
 
 function FoodBox({ title, price, isFavorite, id, isSale, isButtonNeed , serveFoodCounter }) {
-  const addToFavorite = (foodID) => {
-    console.log(foodID);
-    let newFavoriteFood = {
-      title,
-      price,
-      isFavorite: !isFavorite,
-    };
-    fetch(`http://localhost:4000/food/${foodID}`, {
-      method: "PUT",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify(newFavoriteFood),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-      });
-  };
+  // const addToFavorite = (foodID) => {
+  //   console.log(foodID);
+  //   let newFavoriteFood = {
+  //     title,
+  //     price,
+  //     isFavorite: !isFavorite,
+  //   };
+  //   fetch(`http://localhost:4000/food/${foodID}`, {
+  //     method: "PUT",
+  //     headers: {
+  //       "Content-type": "application/json",
+  //     },
+  //     body: JSON.stringify(newFavoriteFood),
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //     });
+  // };
 
   const addFoodToBasket = (foodID) => {
     let newBasketFood = {
@@ -63,10 +63,6 @@ function FoodBox({ title, price, isFavorite, id, isSale, isButtonNeed , serveFoo
             <AiTwotoneStar className="score-icon" />
             <AiTwotoneStar className="score-icon" />
           </div>
-          <AiOutlineHeart
-            className={`favorite-icon ${isFavorite && "favorite-food-active"}`}
-            onClick={() => addToFavorite(id)}
-          />
         </div>
         <div className="price-addtocart">
           <span className="food-price">{price.toLocaleString()} تومان</span>

@@ -140,7 +140,8 @@ function HomePage() {
       </div>
 
       <div className="introduce">
-        <img src="./img/images--2-.jpg" alt="introduce" />
+        {/* <img src="./img/images--2-.jpg" alt="introduce" /> */}
+        <div className="header-title">
         <h1 className="introduce-title">
           <Typewriter
             onInit={(typewriter) => {
@@ -159,6 +160,7 @@ function HomePage() {
             }}
           />
         </h1>
+        </div>
         <div className="foods">
           {filteredFoodByCategory.map((food) => (
             <FoodBox key={food.id} {...food} isButtonNeed={true} />

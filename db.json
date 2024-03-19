@@ -17,7 +17,6 @@
     {
       "title": "سالاد فصل",
       "price": 30000,
-      "isFavorite": false,
       "id": "10",
       "category": "سالاد",
       "isSale": false,
@@ -33,7 +32,6 @@
     {
       "title": "قروتی",
       "price": 450000,
-      "isFavorite": false,
       "id": "12",
       "isSale": false,
       "category": "محلی",
@@ -44,7 +42,6 @@
       "price": 98000,
       "isSale": false,
       "id": "15",
-      "isFavorite": false,
       "category": "سنتی",
       "serveFoodCounter": "0"
     },
@@ -54,14 +51,12 @@
       "isSale": false,
       "id": "13",
       "category": "ساندویچ",
-      "isFavorite": false,
       "serveFoodCounter": "0"
     },
     {
       "id": "14",
       "title": "پیتزا پپرونی",
       "price": 100000,
-      "isFavorite": false,
       "category": "پیتزا",
       "isSale": false,
       "serveFoodCounter": 0
