@@ -10,7 +10,6 @@ import { Link } from "react-router-dom";
 function Sidebar() {
   return (
     <div className="sidebar" id="sideBar">
-      {/* <h1 className="sidebar-title">به رستوران اطلس خوش آمدید</h1> */}
       <ul className="sidebar-menu">
         <Link to="/" className="sidebar-item-link active">
           <AiTwotoneHome /> صفحه اصلی

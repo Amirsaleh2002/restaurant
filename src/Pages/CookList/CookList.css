@@ -3,11 +3,6 @@
 }
 
 .cooks {
-  /* display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 20px;
-  flex-wrap: wrap; */
   display: grid;
   grid-template-columns: repeat(3,1fr);
   margin-top: 20px;
