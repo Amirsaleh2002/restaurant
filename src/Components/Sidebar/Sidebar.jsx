@@ -4,7 +4,6 @@ import { RxAvatar } from "react-icons/rx";
 import { BiExit } from "react-icons/bi";
 import { AiTwotoneHome } from "react-icons/ai";
 import { FiUsers } from "react-icons/fi";
-import { CiStar } from "react-icons/ci";
 import { FaRegQuestionCircle } from "react-icons/fa";
 import { GiCook } from "react-icons/gi";
 import { Link } from "react-router-dom";
@@ -28,7 +27,7 @@ function Sidebar() {
         <Link to="/aboutus" className="sidebar-item-link">
           <FaRegQuestionCircle /> درباره ما
         </Link>
-        <Link to="/" className="sidebar-item-link">
+        <Link to="/login" className="sidebar-item-link">
           <BiExit /> خروج
         </Link>
       </ul>

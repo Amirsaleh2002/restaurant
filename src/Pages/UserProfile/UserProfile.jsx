@@ -23,7 +23,11 @@ function UserProfile() {
       <div className="profile">
         <div className="details">
           <span className="name">امیرصالح رضایی</span>
-          <img src="./img/download5.png" alt="userProfile" className="user-profile-image" />
+          <img
+            src="./img/download5.png"
+            alt="userProfile"
+            className="user-profile-image"
+          />
         </div>
 
         <div className="other-details">

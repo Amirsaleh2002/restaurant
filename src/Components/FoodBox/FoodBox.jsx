@@ -4,7 +4,15 @@ import { AiOutlineStar, AiTwotoneStar, AiOutlineHeart } from "react-icons/ai";
 import "./FoodBox.css";
 import { Link } from "react-router-dom";
 
-function FoodBox({ title, price, isFavorite, id, isSale, isButtonNeed , serveFoodCounter }) {
+function FoodBox({
+  title,
+  price,
+  isFavorite,
+  id,
+  isSale,
+  isButtonNeed,
+  serveFoodCounter,
+}) {
   // const addToFavorite = (foodID) => {
   //   console.log(foodID);
   //   let newFavoriteFood = {
@@ -30,7 +38,7 @@ function FoodBox({ title, price, isFavorite, id, isSale, isButtonNeed , serveFoo
       title,
       price,
       isSale: true,
-      serveFoodCounter : ++serveFoodCounter
+      serveFoodCounter: ++serveFoodCounter,
     };
     fetch(`http://localhost:4000/food/${foodID}`, {
       method: "PUT",
@@ -69,7 +77,13 @@ function FoodBox({ title, price, isFavorite, id, isSale, isButtonNeed , serveFoo
           </Link>
         </div>
         <div className="price-addtocart">
-          <span className="food-price">{price.toLocaleString()} تومان</span>
+          {isSale ? (
+            <span className="food-price">
+              {(serveFoodCounter * price).toLocaleString()} تومان
+            </span>
+          ) : (
+            <span className="food-price">{price.toLocaleString()} تومان</span>
+          )}
           {isButtonNeed ? (
             <button className="addtocart" onClick={() => addFoodToBasket(id)}>
               افزودن به سبد خرید

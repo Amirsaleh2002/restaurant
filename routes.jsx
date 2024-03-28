@@ -7,7 +7,7 @@ import Login from "./src/Pages/Login/Login";
 import Notifications from "./src/Pages/Notifications/Notifications";
 import Register from "./src/Pages/Register/Register";
 import UserBasket from "./src/Pages/UserBasket/UserBasket";
-import UserProfile from "./src/Pages/userProfile/userProfile";
+import UserProfile from "./src/Pages/UserProfile/UserProfile";
 import CookListInfo from "./src/Pages/CookListInfo/CookListInfo"
 
 let routes = [

@@ -2,7 +2,7 @@
   border: 1px solid #ccc;
   border-radius: 15px;
   margin-top: 15px;
-  max-width: 180px;
+  max-width: 170px;
   background: linear-gradient(90deg , rgb(180, 146, 235) , rgb(175, 218, 247));
 }
 .cook-details {
@@ -31,4 +31,14 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 10px;
+}
+@media (max-width:600px) {
+  .cook-name,
+.cook-history {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.cook-more{
+  font-size: 1.2rem;
+}
 }

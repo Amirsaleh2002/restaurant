@@ -35,3 +35,16 @@
   font-weight: 600;
   padding-top: 15px;
 }
+@media (max-width:600px) {
+  .userlist{
+    overflow-x: scroll;
+  }
+  .order-table thead tr th {
+    font-size: 1.5rem;
+    padding: 0 8px;
+  }
+  .order-table tbody tr td {
+    font-size: 1.3rem;
+    padding-top: 15px;
+  }
+}

@@ -19,8 +19,7 @@ function CookList() {
       <div className="cooks">
         <CookListBox />
         <CookListBox />
-        <CookListBox />
-        
+        <CookListBox />       
         <CookListBox />
         <CookListBox />
         <CookListBox />
