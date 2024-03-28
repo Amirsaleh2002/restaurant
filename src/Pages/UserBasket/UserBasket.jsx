@@ -9,6 +9,9 @@ import FoodBox from "../../Components/FoodBox/FoodBox";
 function UserBasket() {
   const [basketFood, setBasketFood] = useState([]);
 
+  const pageAddress = location.href
+
+
   useEffect(() => {
     fetch("http://localhost:4000/food")
       .then((res) => res.json())
@@ -22,7 +25,7 @@ function UserBasket() {
       <div className="foods">
       {basketFood.map((eachFood) => (
           eachFood.isSale && (
-            <FoodBox key={eachFood.id} {...eachFood}  />
+            <FoodBox key={eachFood.id} {...eachFood} pageAddress={pageAddress}  />
           )
         ))}
       </div>

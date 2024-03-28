@@ -56,16 +56,8 @@
   animation: changeScale 1s;
 }
 .food-counter{
-  font-size: 1.6rem;
-  font-weight: 800;
-}
-@keyframes changeScale {
-  0%{
-    transform: scale(0.8);
-  }
-  100%{
-    transform: scale(1);
-  }
+  font-size: 2rem;
+  font-weight: 900;
 }
 @media (max-width:527px) {
   .food-box{

@@ -2,7 +2,7 @@
   margin: 30px 14px 0;
   display: flex;
   justify-content: space-between;
-  background-color: #7a7979d2;
+  background-color: #dbdbdbd2;
   padding: 15px 20px;
   border-radius: 8px;
   flex-wrap: wrap;
@@ -61,6 +61,7 @@
 }
 .footer-email::placeholder {
   font-size: 1.5rem;
+  color: #fff;
 }
 .footer-btn {
   background: unset;

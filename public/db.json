@@ -4,14 +4,14 @@
       "title": "سینی 5 نفره",
       "price": 299000,
       "isSale": true,
-      "serveFoodCounter": 10,
+      "serveFoodCounter": 11,
       "id": "8"
     },
     {
       "title": "نوشابه",
       "price": 25000,
       "isSale": true,
-      "serveFoodCounter": 5,
+      "serveFoodCounter": 6,
       "id": "9"
     },
     {
@@ -40,10 +40,9 @@
     {
       "title": "آبگوشت",
       "price": 98000,
-      "isSale": false,
-      "id": "15",
-      "category": "سنتی",
-      "serveFoodCounter": "0"
+      "isSale": true,
+      "serveFoodCounter": 3,
+      "id": "15"
     },
     {
       "title": "همبرگر",

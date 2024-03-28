@@ -3,13 +3,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(
-    to right,
-    #e2e2e2,
-    #c5c5c5c5,
-    #c0bfbfb7,
-    #cecece73
-  );
 }
 .body {
   width: calc(100% - 160px);

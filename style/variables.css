@@ -1,9 +1,9 @@
 :root {
     --primary-font: "IRANSans";
-    --primary-color: #bee416;
+    --primary-color: #413392;
     --white-color: #fff;
-    --dark-color: #dba81a;
-    --sidebar-color : #e41649;
-    --input-color : #c5c5c5;
+    --dark-color: #141414;
+    --sidebar-color : #ade416;
+    --input-color : #01160a;
     --category-color : #e4db62;
 }

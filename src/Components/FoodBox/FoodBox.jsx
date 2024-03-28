@@ -1,8 +1,8 @@
 import React from "react";
 import { AiOutlineStar, AiTwotoneStar, AiOutlineHeart } from "react-icons/ai";
 
-import "./FoodBox.css";
 import { Link } from "react-router-dom";
+import "./FoodBox.css";
 
 function FoodBox({
   title,
@@ -12,26 +12,9 @@ function FoodBox({
   isSale,
   isButtonNeed,
   serveFoodCounter,
+  pageAddress
 }) {
-  // const addToFavorite = (foodID) => {
-  //   console.log(foodID);
-  //   let newFavoriteFood = {
-  //     title,
-  //     price,
-  //     isFavorite: !isFavorite,
-  //   };
-  //   fetch(`http://localhost:4000/food/${foodID}`, {
-  //     method: "PUT",
-  //     headers: {
-  //       "Content-type": "application/json",
-  //     },
-  //     body: JSON.stringify(newFavoriteFood),
-  //   })
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       console.log(data);
-  //     });
-  // };
+
 
   const addFoodToBasket = (foodID) => {
     let newBasketFood = {
@@ -77,7 +60,7 @@ function FoodBox({
           </Link>
         </div>
         <div className="price-addtocart">
-          {isSale ? (
+          {isSale && pageAddress === "http://localhost:5173/userbasket" ? (
             <span className="food-price">
               {(serveFoodCounter * price).toLocaleString()} تومان
             </span>
