@@ -1,0 +1,72 @@
+.food-box {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-top: 15px;
+  background: linear-gradient(90deg , rgb(218, 240, 94) , rgb(175, 218, 247));
+}
+.food-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+.food-box-img {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 250px;
+  height: 200px;
+}
+.food-desc,
+.food-price {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 8px 0;
+}
+.see-food-details{
+  font-size: 1.7rem;
+  color: blue;
+  font-weight: 800;
+}
+.see-food-details:hover {
+  color: red;
+}
+.score-favorite,
+.price-addtocart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+}
+.addtocart {
+  background-color: rgb(16, 16, 194);
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.favorite-icon{
+  background: unset;
+  font-size: 2.5rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.favorite-food-active{
+  background-color: red;
+  animation: changeScale 1s;
+}
+.food-counter{
+  font-size: 2rem;
+  font-weight: 900;
+}
+@media (max-width:527px) {
+  .food-box{
+    width: 80%;
+    margin: 10px auto;
+  }
+  .food-box-img {
+    width: 100%;
+  }
+}

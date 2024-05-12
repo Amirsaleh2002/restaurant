@@ -1,0 +1,50 @@
+.userlist {
+  margin: 30px 16px;
+  padding: 15px 20px;
+}
+.order-btn-watch,
+.order-btn-del,
+.order-btn-edit {
+  background-color: rgb(16, 194, 40);
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.order-btn-del {
+  background-color: rgb(194, 16, 16);
+}
+.order-btn-edit {
+  background-color: rgb(16, 78, 194);
+}
+.order-table {
+  width: 100%;
+}
+.order-table thead tr th {
+  text-align: right;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.order-table tbody tr td {
+  text-align: right;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-top: 15px;
+}
+@media (max-width:600px) {
+  .userlist{
+    overflow-x: scroll;
+  }
+  .order-table thead tr th {
+    font-size: 1.5rem;
+    padding: 0 8px;
+  }
+  .order-table tbody tr td {
+    font-size: 1.3rem;
+    padding-top: 15px;
+  }
+}

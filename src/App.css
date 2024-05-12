@@ -1,0 +1,20 @@
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.body {
+  /* width: calc(100% - 160px);
+  margin-right: 160px; */
+  width: 100%;
+  margin-top: 25px;
+}
+@media (max-width: 600px) {
+  .body {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}

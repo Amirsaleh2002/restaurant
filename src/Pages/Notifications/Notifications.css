@@ -1,0 +1,18 @@
+.allNotifsBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 14px;
+}
+.no-notif {
+  border: 1px solid #ccc;
+  padding: 12px;
+  background-color: aliceblue;
+  margin: 10px 0;
+  text-align: center;
+}
+.no-notif-text {
+  font-size: 2rem;
+  color: #252525;
+  font-weight: 900;
+}

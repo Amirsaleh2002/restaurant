@@ -1,0 +1,134 @@
+.footer {
+  margin: 30px 14px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #dbdbdbd2;
+  padding: 15px 20px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+.footer-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.link-item {
+  margin-top: 6px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.link-item::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: -22px;
+  width: 20px;
+  height: 5px;
+  background-color: green;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  transform: rotate(-60deg);
+  border-radius: 8px;
+}
+.link-item:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+.link-item:hover {
+  transform: translateX(-20px);
+}
+.send-email {
+  background-color: var(--input-color);
+  padding: 6px;
+  border: 1px solid #252525;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-email {
+  border: none;
+  outline: none;
+  background: unset;
+  line-break: auto;
+  color: #fff;
+  border-radius: 12px;
+  padding: 4px 8px;
+}
+.footer-email::placeholder {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.footer-btn {
+  background: unset;
+  cursor: pointer;
+  border-color: var(--input-color);
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+}
+.criticize {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.social {
+  display: flex;
+  gap: 10px;
+}
+.social-media {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+.telegram,
+.instagram {
+  font-size: 3.5rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.telegram {
+  color: blue;
+}
+.instagram {
+  color: rgb(211, 12, 88);
+}
+.social-media:nth-child(1):hover,
+.social-media:nth-child(2):hover {
+  transform: scale(1.05);
+}
+.social-media:nth-child(1):hover .telegram,
+.social-media:nth-child(2):hover .instagram {
+  transform: rotate(20deg);
+}
+@media (max-width: 760px) {
+  .right-footer,
+  .center-footer,
+  .left-footer {
+    margin-top: 15px;
+  }
+  .center-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .footer-title{
+    text-align: center;
+  }
+  .footer-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

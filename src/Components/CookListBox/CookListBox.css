@@ -1,0 +1,44 @@
+.cook-box {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-top: 15px;
+  max-width: 170px;
+  background: linear-gradient(90deg , rgb(180, 146, 235) , rgb(175, 218, 247));
+}
+.cook-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.cook-box-img{
+  width: 100%;
+}
+.cook-name,
+.cook-history {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.cook-more {
+  background-color: rgb(230, 6, 200);
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+@media (max-width:600px) {
+  .cook-name,
+.cook-history {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.cook-more{
+  font-size: 1.2rem;
+}
+}

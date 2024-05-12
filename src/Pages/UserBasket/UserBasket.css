@@ -1,0 +1,15 @@
+.total-price {
+  background-color: blue;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 40px 0;
+}
+.swal2-title{
+  font-size: 2.5rem;
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm{
+ font-size: 1.6em !important;
+}

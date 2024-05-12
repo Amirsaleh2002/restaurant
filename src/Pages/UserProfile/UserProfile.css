@@ -1,0 +1,62 @@
+.profile {
+  margin: 30px 14px;
+}
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.name {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.user-profile-image {
+  border-radius: 50%;
+}
+.chart {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chart-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 40px;
+}
+.recharts-legend-item-text {
+  margin-right: 4px;
+}
+.other-details {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.score,
+.last-buy,
+.last-buy-date {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.score-icon {
+  color: rgb(211, 180, 3);
+  font-size: 2rem;
+}
+.change {
+  background-color: rgb(16, 16, 194);
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media (max-width:1100px) {
+  .chart{
+    overflow-x: scroll;
+  }
+}

@@ -1,0 +1,21 @@
+.introduce {
+  margin: 30px 14px;
+}
+.introduce-title {
+  font-size: 4.2rem;
+  font-weight: bolder;
+  text-align: center;
+  color: #7411d1;
+}
+.foods {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .introduce-title {
+    font-size: 3rem;
+  }
+}
