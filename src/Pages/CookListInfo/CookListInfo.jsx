@@ -51,7 +51,7 @@ function FoodDetails() {
         <img
           src="../img/download5.png"
           alt="cook box"
-          className="cook-box-img"
+          className="cook-info-img"
         />
         <p>
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
@@ -82,7 +82,7 @@ function FoodDetails() {
         <img
           src="../img/download5.png"
           alt="cook box"
-          className="cook-box-img"
+          className="cook-info-img"
         />
       </div>
       <Footer />

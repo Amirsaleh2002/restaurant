@@ -79,27 +79,6 @@ function Header() {
   //     .then((notifs) => setAllNotifications(notifs));
   // }, []);
 
-  // const showSidebar = () => {
-  //   document.querySelector(".sidebar").style.right = "0";
-  //   document.querySelector(".sidebar").style.zIndex = "3";
-  //   setIsSidebarOpen(true);
-  // };
-
-  // if (isSidebarOpen) {
-  //   document.addEventListener("click", (event) => {
-  //     event.preventDefault();
-  //     if (!event.target.className.includes("sidebar")) {
-  //       document.querySelector(".sidebar").style.right = "-200px";
-  //       setIsSidebarOpen(false);
-  //     }
-  //   });
-  // }
-  //   document.addEventListener("click", (event) => {
-  //     event.preventDefault();
-  //     if (!event.target.className.includes('sidebar')) {
-  //       setIsSidebarOpen(false);
-  //     }
-  //   });
 
   return (
     <>
